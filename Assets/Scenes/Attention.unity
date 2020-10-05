@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -8093,8 +8094,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.3, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 132, y: 0}
+  m_SizeDelta: {x: 264, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372915824
 MonoBehaviour:
@@ -10219,7 +10220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -871.4802}
+  m_AnchoredPosition: {x: 912.55, y: -701.35376}
   m_SizeDelta: {x: 1539.0667, y: 80.06323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &489755021
@@ -11363,8 +11364,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.3, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 132, y: 0}
+  m_SizeDelta: {x: 264, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &525440008
 MonoBehaviour:
@@ -12899,7 +12900,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1077.3, y: 80.064}
+  m_SizeDelta: {x: 1231.3, y: 80.1}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &601300122
 MonoBehaviour:
@@ -13286,7 +13287,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Details: truck hits bump, socks, and man can''t see
 
-    Don''t take off for child''s inferences (e.g. pet cages broken)'
+    Don''t take off
+    for child''s inferences (e.g. pet cages broken)'
 --- !u!222 &606512489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16463,7 +16465,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1077.3, y: 80.1}
+  m_SizeDelta: {x: 800, y: 80.1}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &773993007
 MonoBehaviour:
@@ -16515,13 +16517,13 @@ MonoBehaviour:
     m_Options:
     - m_Text: Select One
       m_Image: {fileID: 0}
+    - m_Text: N/A
+      m_Image: {fileID: 0}
     - m_Text: Inattentive
       m_Image: {fileID: 0}
-    - m_Text: Hyperactive-impulsive
+    - m_Text: Hyperactive-Impulsive
       m_Image: {fileID: 0}
     - m_Text: Combined
-      m_Image: {fileID: 0}
-    - m_Text: Not applicable
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16674,8 +16676,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.3, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 132, y: 0}
+  m_SizeDelta: {x: 264, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &775434191
 MonoBehaviour:
@@ -16708,7 +16710,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ADHD
+  m_Text: Have ever been diagnosed with AD/HD by a psychologist, psychiatrist, or
+    medical doctor?
 --- !u!222 &775434192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17626,7 +17629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &808280823
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18310,7 +18313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &839226615
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18329,7 +18332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -616.2905}
+  m_AnchoredPosition: {x: 912.55, y: -573.7589}
   m_SizeDelta: {x: 1539.0667, y: 80.06323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &844640777
@@ -18981,7 +18984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -531.2273}
+  m_AnchoredPosition: {x: 912.55, y: -616.2905}
   m_SizeDelta: {x: 1539.0667, y: 80.06323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &900019385
@@ -21529,7 +21532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1053108199
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21548,7 +21551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -701.35376}
+  m_AnchoredPosition: {x: 912.55, y: -658.82214}
   m_SizeDelta: {x: 1539.0667, y: 80.06323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1056331052
@@ -21884,7 +21887,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1077.3, y: 80.1}
+  m_SizeDelta: {x: 800, y: 80.1}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1079216828
 MonoBehaviour:
@@ -26823,7 +26826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -1041.5751}
+  m_AnchoredPosition: {x: 912.55, y: -871.4486}
   m_SizeDelta: {x: 1000, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1287327872
@@ -28280,7 +28283,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.00002670288}
-  m_SizeDelta: {x: 1077.3, y: 80.1}
+  m_SizeDelta: {x: 1231.3, y: 80.1}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1348568755
 MonoBehaviour:
@@ -28972,7 +28975,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -956.54346}
+  m_AnchoredPosition: {x: 912.55, y: -786.417}
   m_SizeDelta: {x: 1539.0667, y: 80.06323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1388849456
@@ -31004,7 +31007,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.000015258789}
-  m_SizeDelta: {x: 1077.3, y: 80.1}
+  m_SizeDelta: {x: 1231.3, y: 80.1}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1462614951
 MonoBehaviour:
@@ -31596,13 +31599,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _comprehension_enabled: 0
   ID: {fileID: 61313260}
-  grade: {fileID: 1625170329}
   version: {fileID: 1462614951}
   dob: {fileID: 601300122}
   fall_or_spring: {fileID: 1348568755}
-  type_school: {fileID: 1562763711}
-  sex: {fileID: 1051846827}
-  ethnicity: {fileID: 1697722467}
   adhd: {fileID: 1079216828}
   adhdpres: {fileID: 773993007}
   Q1: {fileID: 112139842}
@@ -34274,7 +34273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -157.46045}
+  m_AnchoredPosition: {x: 912.55, y: -327.5869}
   m_SizeDelta: {x: 1539.0667, y: 147.091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623355613
@@ -35592,7 +35591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -446.16403}
+  m_AnchoredPosition: {x: 912.55, y: -531.2273}
   m_SizeDelta: {x: 1539.0667, y: 80.06323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1710891474
@@ -36007,7 +36006,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -361.1008}
+  m_AnchoredPosition: {x: 912.55, y: -446.16403}
   m_SizeDelta: {x: 1539.0667, y: 80.06323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1728442678
@@ -36677,8 +36676,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.3, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 132, y: 0}
+  m_SizeDelta: {x: 264, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761618511
 MonoBehaviour:
@@ -36711,7 +36710,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ADHDPresentation
+  m_Text: If yes, which presentation (if known)?
 --- !u!222 &1761618512
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39641,7 +39640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1923050435
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39660,7 +39659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 912.55, y: -786.417}
+  m_AnchoredPosition: {x: 912.55, y: -743.8854}
   m_SizeDelta: {x: 1539.0667, y: 80.06323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1928818556
@@ -43494,8 +43493,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.3, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 132, y: 0}
+  m_SizeDelta: {x: 264, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104657744
 MonoBehaviour:

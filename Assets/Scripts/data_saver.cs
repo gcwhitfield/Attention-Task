@@ -9,13 +9,13 @@ public class data_saver : MonoBehaviour {
 
 	[SerializeField] bool _comprehension_enabled = true;
 	[SerializeField] InputField ID;
-	[SerializeField] Dropdown grade;
+	// [SerializeField] Dropdown grade;xx
 	[SerializeField] Dropdown version;
 	[SerializeField] InputField dob;
 	[SerializeField] Dropdown fall_or_spring;
-	[SerializeField] Dropdown type_school;
-	[SerializeField] Dropdown sex;
-	[SerializeField] Dropdown ethnicity;
+	// [SerializeField] Dropdown type_school;xx
+	// [SerializeField] Dropdown sex;xx
+	// [SerializeField] Dropdown ethnicity;xx
 	[SerializeField] Dropdown adhd;
 	[SerializeField] Dropdown adhdpres;
 	[SerializeField] InputField Q1;
@@ -112,7 +112,7 @@ public class data_saver : MonoBehaviour {
 		catch(System.ArgumentOutOfRangeException){}
 
 		//Add demographic data to our entry
-		otherData.AddRange(new string[]{ System.DateTime.Now.ToString(), s(grade.value, true), s(version.value, false), dob.text, age, s(fall_or_spring.value, false), s(type_school.value, false), s(sex.value, false), s(ethnicity.value, false), s(adhd.value, true), s(adhdpres.value, false)});
+		otherData.AddRange(new string[]{ System.DateTime.Now.ToString(), s(version.value, false), dob.text, age, s(fall_or_spring.value, false), s(adhd.value, true), s(adhdpres.value, false)});
 
 		//Remove commas from our text fields
 		Q1.text = System.String.Concat(Q1.text.Select((c) => c==',' ? ' ' : c));
@@ -149,7 +149,7 @@ public class data_saver : MonoBehaviour {
 		//Question to ponder: is there a less costly way of doing this without 
 		//having to create and re-append the string?
 		List<string> info = new List<string>();
-		info.AddRange(new string[] {"Trial Date","Grade", "Version", "Date of Birth", "Age", "Fall or Spring", "Type of School", "Sex", "Ethnicity", "ADHD", "ADHD Presentation"});
+		info.AddRange(new string[] {"Trial Date", "Version", "Date of Birth", "Age", "Fall or Spring", "ADHD", "ADHD Presentation"});
 		if (comprehension_enabled) info.AddRange(new string[] {"Q1 comments", "Q2 comments", "Q3 comments", "Q4 comments", "Q5 comments", "Q6 comment", "Q1 score", "Q2 score", "Q3 score", "Q4 score","Q5 score", "Q6 score", "Total Correct Q1Q6", "Percent Correct Q1Q6", "Book Enjoyment", "Recommend Book to Friend", "Reading Enjoyment"});
 		info.AddRange(new string[] {"Total Time", "Search Trials Correct", "Search Trials Incorrect", "Search Trial Accuracy", "Average Search Trial Reaction Time", "Catch Trials Correct", "Catch Trials Incorrect", "Catch Trial Accuracy", "Average Catch Trial Reaction Time", "Total Trials Correct", "Total Trials Incorrect"});
 		DataHeader = new string[info.Count];
